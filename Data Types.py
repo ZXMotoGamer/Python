@@ -23,7 +23,9 @@ player_level = 21
 player_critical_hit_percentage = 2.3
 player_is_infected = False
 
-print(f"Character Class: {player_class}")
+print("\nCharacter Stats:")
+
+print(f"\nCharacter Class: {player_class}")
 print(f"Character Level: {player_level}")
 print(f"Character Critical Hit: {player_critical_hit_percentage}%")
-print(f"Infected: {player_is_infected}")
+print(f"Infected: {player_is_infected}\n")
