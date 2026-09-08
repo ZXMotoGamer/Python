@@ -1,5 +1,6 @@
 price = float(input("cost of pie? "))
-print(f"pie is {price:>20.2f}")
+print(f"pie is {f'${price:.2f}':>21}")
+# print(f"pie is ${price:>20.2f}")
 # print(f"pie is                                   ${price:.2f}")
 # print(f"pie is ................................. ${price:.2f}")
 # can the $ symbol be attached to the price variable so that is is printed in front of it without using spaces or dots.
