@@ -8,14 +8,14 @@ ASSIGNMENT REQUIREMENTS
        - Uses a boolean variable to control the loop.
 [ ] 3. Task 2: For Loop (99 Bottles of Beer)
        - Counts backwards from 99 to 1.
-       - Prints "[number] bottles of beer on the wall!"
+       - Prints "[number] bottles of beer on the wall!... the full stanza, correcting to singualr for 1
 [ ] 4. Upload to GitHub and paste the link below.
 -----------------------------------------------------------------------
 """
 
 """
 Assignment 4B: Loops
-Date:9/[ ]/26
+Date:9/10/26
 File Name: Loops.py
 """
 print("\nThe Child...")
