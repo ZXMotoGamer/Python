@@ -7,7 +7,15 @@ FILE: buffet.py
 -----------------------------------------------------------------------
 """
 
+"""
+ASSIGNMENT: 3B - Updated
+DATE: [9/8/2026]
+"""
+
 user_day = input("\nWhat day is it? ").lower()
+# I wrote this line to ask the user what day they required information about.
+# I also converted the input to lower case in order to feed the match/case compiler.
+
 
 match user_day:
     case "tuesday":
@@ -17,20 +25,24 @@ match user_day:
         print("\nFree Drinks!")
     case _:
         child_price_per_year = 1.00
-# tuesdays child price is set to what the business requested.
-# sundays "Free Drinks" notice has been set as the business requested.
-# all days of the week other than tuesday has been set to the normal child price as the business requested.
+# I used match case to pin certain price rules for children to certain days of the week.
+# I also pinned any specials to certain days as well.
+
 
 age = int(input("\nWhat is you're age? "))
 
 
 if age < 1:
-    print(f"\nDay:{user_day}\t\tAge:{age}\t\tPrice:$0.00 Free of Charge!\n")
+    print(f"\nDay: {user_day}\t\tAge: {age}\t\tPrice: $0.00 Free of Charge!\n")
 elif age < 13:
-    print(f"\nDay:{user_day}\t\tAge:{age}\t\tPrice:${child_price_per_year * age:.2f}\n")
+    print(
+        f"\nDay: {user_day}\t\tAge: {age}\t\tPrice: ${child_price_per_year * age:.2f}\n"
+    )
 elif age < 65:
-    print(f"\nDay:{user_day}\t\tAge:{age}\t\tPrice:$16.95\n")
-elif age > 64:
-    print(f"\nDay:{user_day}\t\tAge:{age}\t\tPrice:$12.95\n")
+    print(f"\nDay: {user_day}\t\tAge: {age}\t\tPrice: $16.95\n")
+else:
+    print(f"\nDay: {user_day}\t\tAge: {age}\t\tPrice: $12.95\n")
+# I used if/elif/else statements along with f-strings to determine what day, what age, and what price data is needed to answer inputs provided.
 
-# the prices have been set to their decided ages as the business requested.
+
+# *** I updated my if/elif/else statements along with my comments for this assignment. ***
