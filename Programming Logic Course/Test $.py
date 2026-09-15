@@ -35,18 +35,24 @@
 # should I care?
 
 
-board = True
+# bored = True
 
-while board:
-    print("\nCan we sing a song?")
+# while bored:
+# print("\nCan we sing a song?")
 
-    answer = input("\nParents say: ").lower()
+# answer = input("\nParents say: ").lower()
 
-    if answer == "yes":
-        board = print(
-            "99 bottles of beer on the wall, 99 bottles of beer. Take one down and pass it around, 98 bottles of beer on the wall."
+# if answer == "yes":
+# bored = print(
+# "99 bottles of beer on the wall, 99 bottles of beer. Take one down and pass it around, 98 bottles of beer on the wall."
+# )
+# for n, m in zip(range(98, 0, -1), range(97, 0, -1)):
+# print(
+# f"{n} bottles of beer on the wall, {n} bottles of beer. Take one down and pass it around, {m} bottles of beer on the wall."
+# )
+
+for n in range(99, 0, -1):
+    if n == 1:
+        print(
+            f"{n} bottles of beer on the wall,\n{n} bottles of beer.\nTake one down and pass it around,\n{n-1} bottles of beer on the wall.\n\n"
         )
-        for n, m in zip(range(98, 0, -1), range(97, 0, -1)):
-            print(
-                f"{n} bottles of beer on the wall, {n} bottles of beer. Take one down and pass it around, {m} bottles of beer on the wall."
-            )

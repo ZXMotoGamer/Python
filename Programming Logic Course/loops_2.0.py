@@ -31,34 +31,32 @@ while whiny_child:
         whiny_child = False
 # I made a whiny child perform a "WHILE LOOP" asking if they are at their destination yet. This loop wont stop until the parents give in and say yes.
 
-board_child = True
+bored_child = True
 
-while board_child:
+while bored_child:
     print("\nCan we sing a song?")
 
     answer = input("\nParents say: ").lower()
 
+    bored_child = print("\nExcited child: Yay!\n")
+
     if answer == "yes":
-        # board_child = print(
-        # "\n99 bottles of beer on the wall, 99 bottles of beer. Take one down and pass it around, 98 bottles of beer on the wall."
-        # )
-        for n, m in zip(range(99, 1, -1), range(98, -1, -1)):
-            print(
-                f"{n} bottles of beer on the wall, {n} bottles of beer. Take one down and pass it around, {m} bottles of beer on the wall."
-            )
+
+        for n, m in zip(range(99, 1, -1), range(98, 0, -1)):
+            if m > 1:
+                print(
+                    f"{n} bottles of beer on the wall, {n} bottles of beer. Take one down and pass it around, {m} bottles of beer on the wall."
+                )
+            elif m == 1:
+                print(
+                    f"{n} bottles of beer on the wall, {n} bottles of beer. Take one down and pass it around, {m} bottle of beer on the wall."
+                )
         print(
-            "\nNo more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall!."
+            "1 bottle of beer on the wall, 1 bottle of beer. Take one down and pass it around, no more bottles of beer on the wall!."
         )
-        board_child = print("\nHappy child: Again, again!")
-    # After the parents give in the child becomes board and wants to sing a song and the "BOARD_CHILD" loop wont stop until the parents say yes as well.
-    # We all hate this song and so I wanted the whole song. In this "FOR" loop I wanted both numbers to count down but didn't know how to code it.
-    # I looked up if there was a function to combine two countdown ranges in a single line and learned about the "ZIP()" function.
-    # At first I could not get it to work because once again I thought and wrote as a human would. I figured out again you have to be very detailed and code both ranges with all the info for both "FOR" variables.
-    # This was cool and I got a kick out of finding out how to combined the ranges so that both numbers would countdown independently.
+        print(
+            "\nNo more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall!"
+        )
+        bored_child = print("\nHappy child: Again, again!")
 
-# Had to adjust some words above for the last few lines of the song by manually printing them.
-
-# print("\nHappy Child: Again, again!")
 print("\nParents: Ugh... absolutely not!\n")
-
-# This was fun!
