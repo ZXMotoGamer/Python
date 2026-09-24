@@ -48,9 +48,45 @@ ticket = int(
 print(f"{name} is {age} years old.")
 
 # YOU CAN PUT AN (f-string) INSIDE OF ANOTHER (f-string) FOR CERTAIN WANTED OUTPUTS.
-
 # FORMATTING NUMBERS: (:.2f) THIS IS USED IN (f-strings) TO SHOW DECIMALS THE 2 MEANS IT WILL ONLY SHOW TWO DECIMAL PLACES. (:,.2f): THIS DOES THE SAME AS THE FIRST WITH THE ADDITION OF SHOWING A THOUSAND COMMA PLACE.
 print(f"Your order is {f'${cost:.2f}':>21}")
 print(f"Your order is {f'${cost:,.2f}':>21}")
 
-#
+# FORMATTING PERCENTAGES: THE (:.1%) FUNCTION HANDLES PERCENTAGES BY DOING THE MATH FOR YOU. THE (.1) MEANS THAT THE OUTPUT WILL SHOW ONE DECIMAL PLACE OF THE PERCENTAGE.
+score = 0.857
+print(f"You received a {score:.1%} on the test.")
+
+# COMPARISON OPERATORS: THESE ARE USED TO COMPARE INPUTS, VARIABLES, AND OTHER FORMS OF DATA.
+# (==) EQUALS TO, (!=) NOT EQUAL TO, (>) GREATER THAN, (<) LESS THAN, (>=) GREATER THAN OR EQUAL TO, (<=) LESS THAN OR EQUAL TO.
+# IF/ELIF/ELSE OPERATORS: THESE CHECK IF A CONDITION IS TRUE OR FALSE. (if) THE CONDITION IS TRUE THE FOLLOWING CODE RUNS, IF THE CONDITION IS FALSE THE CODE SKIPS THE CODE AND GOES TO THE NEXT CONDITION CHECK USUALLY (elif). (elif) IS SHORT FOR ELSE/IF MEANING AFTER (if) IF ELSE CONDITION IS CHECKED (elif). YOU CAN HAVE MANY (elif)s WITH MANY DIFFERENT CONDITION CHECKS. AFTER (elif) THERE IS NOTHING LEFT BUT (else) THIS IS THE LAST OF THE CONDITION CHECKS, USUALLY THERE IS A LIST SOMETIMES THERE IS NOT. IF ALL (if)/(elif)s TURN OUT TO BE FALSE THEN THE REST IS (else) and its code runs.
+will_age = 21
+if will_age == 21:
+    print("Will can drink")
+elif will_age != 21:
+    print("Will can not drink")
+elif will_age > 21:
+    print("Will can drink")
+elif will_age < 21:
+    print("Will can not drink")
+elif will_age >= 21:
+    print("Will can drink")
+elif will_age <= 21:
+    print("Will can not drink unless he is 21")
+
+# PATTERN MATCHING: (match:case) IS FOR COMPARING/MATCHING VARIABLES VALUES TO CERTAIN "CASES". USUALLY A USERS INPUT TO A CERTAIN OUTPUT. (match) something to a (case) for the correct output. (case _:) acts like (else) it catches whatever the user inputs that it can not match and outputs accordingly. USE MATCH:CASE WHEN: YOU ARE COMPARING A SINGLE VARIABLE OR EXPRESSION AGAINST A SERIES OF DISCRETE, EXACT VALUES OR DATA PATTERNS SUCH AS MENU CHOICES, COMMAND STRINGS, STATUS CODES, OR STRUCTURAL DATA TYPEES. IT KEEPS MULTI-WAY DISCRETE VALUE CHECKS CLEANER AND MORE READABLE. USE (if/elif/else) WHEN: YOUR CONDITIONS INVOLVE RANGES OF VALUES LIKE NUMERIC THRESHOLDS, AGE < 16, INDEPENDENT BOOLEAN EXPRESSIONS, OR MULTIPLE DIFFERENT VARIABLES EVALUATED TOGETHER IN COMPLEX LOGICAL COMPARISONS.
+user_month = input("What month is it? ")
+match user_month:
+    case "january":
+        print("New year!")
+    case "february":
+        print("Valentine's Day!")
+    case "march":
+        print("Spring!")
+    case _:
+        print("Try january, february, or march.")
+
+# (.upper()): IS A FUNCTION THAT USUALLY GOES ON THE END OF CODE THAT IS USED TO MAKE ALL ABC CHARACTERS CAPITALIZED.
+
+# (.lower()): DOES THE OPPOSITE OF (.upper()).
+
+# (and/or/not):
