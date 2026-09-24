@@ -51,8 +51,8 @@
 # f"{n} bottles of beer on the wall, {n} bottles of beer. Take one down and pass it around, {m} bottles of beer on the wall."
 # )
 
-for n in range(99, 0, -1):
-    if n == 1:
-        print(
-            f"{n} bottles of beer on the wall,\n{n} bottles of beer.\nTake one down and pass it around,\n{n-1} bottles of beer on the wall.\n\n"
-        )
+# for n in range(99, 0, -1):
+#     if n == 1:
+#         print(
+#             f"{n} bottles of beer on the wall,\n{n} bottles of beer.\nTake one down and pass it around,\n{n-1} bottles of beer on the wall.\n\n"
+#         )
