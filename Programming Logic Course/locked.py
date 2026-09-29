@@ -16,7 +16,7 @@ Date: /  /
 File: locked.py
 """
 
-JAGEX = "Runescape"
+JAGEX = "Runescape Accounts"
 
 USER_NAMES = (
     "Master_Meri",
@@ -64,3 +64,10 @@ while rs_account_settings:
                 print(f"\nCurrent Username: {username_change}")
                 new_username = input("\nPlease enter new username: ")
                 print(f"New username: {USER_NAMES[0]}")
+
+
+# ask employee level first
+# menu for employee
+# menu for IT or Admin
+# to change tuple covert to list so admin can change then convert back into a tuple.
+# look up tuple or list by index
