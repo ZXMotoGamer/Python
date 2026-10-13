@@ -46,3 +46,21 @@ while rs_account_settings:
                 print(f"\nCurrent Username: {username_change}")
                 new_username = input("\nPlease enter new username: ")
                 print(f"New username: {USER_NAMES[0]}")
+
+
+# data_maapper.py Scrap:
+while True:
+    try:
+        user_input = input("\nEnter a word: ").strip().upper()
+        if user_input == "QUIT":
+            print("\nGoodbye\n")
+            break
+        for letter in user_input:
+            for key, value in NATO_ALPHABET.items():
+                if letter == key:
+                    print(value)
+                    continue
+    except Exception as e:
+        print(f"{e}")
+        continue
+# --------------------------------------------------------------
