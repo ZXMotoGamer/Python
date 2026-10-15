@@ -3,6 +3,8 @@ Project Document: Pitstop Auto
 System Parameters
 Customers will use this system to request what service they need. It will provide service options and oil spec options. There will also be add-on products.
 
+CONSTANTS
+
 Services:
 Standard oil change - $39.95
 Syn-blend oil change - $54.95
