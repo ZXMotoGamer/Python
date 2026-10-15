@@ -22,15 +22,41 @@ Wheel alignment - $129.95
 
 Terminal interaction
 
-Customer info:
-have you been here before (y/n)
-customer look up
+System menu:
+Services
+Customer info - update/delete
+Customer history - print/delete
+Quit
+
+Services:
+1. have you been here before (y/n)
+if yes look up customer via phone number
+if no input new customer
+2. pull customer info for ticket/service
+3. take customers order/make service ticket
+4 confirm ticket/order
+
+New customer info:
 Enter customer name: Jasmine
 Enter customer address: 201 W Benton st
+Enter customer phone number: 8158243984
 Enter vehicle year: 2021
 Enter vehicle make: kia
 Enter vehicle model: rio
 Enter vehicle license plate: S90CK
+
+Update customer info:
+update address
+phone number
+vehicle
+delete
+
+Customer history:
+look up all history
+delete history
+
+Quit:
+end program
 
 Service selection:
 Standard oil change
