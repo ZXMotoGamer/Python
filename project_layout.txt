@@ -1,0 +1,68 @@
+Project Document: Pitstop Auto
+
+System Parameters
+Customers will use this system to request what service they need. It will provide service options and oil spec options. There will also be add-on products.
+
+Services:
+Standard oil change - $39.95
+Syn-blend oil change - $54.95
+Full-syn oil change - $69.95
+
+Oil weight:
+10w30
+5w30
+5w20
+
+Add-ons:
+Air filter - $24.95
+Cabin air filter – $29.95
+Wiper blades - $44.00
+Tire rotation - $20.00
+Wheel alignment - $129.95
+
+Terminal interaction
+
+Customer info:
+have you been here before (y/n)
+customer look up
+Enter customer name: Jasmine
+Enter customer address: 201 W Benton st
+Enter vehicle year: 2021
+Enter vehicle make: kia
+Enter vehicle model: rio
+Enter vehicle license plate: S90CK
+
+Service selection:
+Standard oil change
+Syn-blend oil change
+Full-syn oil change
+
+Oil weight selection:
+10w30
+5w30
+5w20
+
+Add-on selection:
+Air filter
+Cabin air filter
+Wiper blades
+Tire rotation
+Wheel alignment
+
+Confirm service  /  Edit service(redo?)
+
+Multi-stream output
+
+Human readable receipt:
+Customer: Jasmine
+Address: 201 W Benton st
+Vehicle: 2021, kia, rio
+License plate: S90CK
+Service: full-syn oil change
+Add-ons: wiper blades
+Total price:  $113.95
+
+System history
+
+Computer readable:
+Jasmine, 201 W Benton st, 2021, kia, rio, S90CK, full-syn oil change, wiper blades, 113.95
