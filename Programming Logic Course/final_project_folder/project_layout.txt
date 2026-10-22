@@ -36,7 +36,10 @@ if yes look up customer via phone number
 if no input new customer
 2. pull customer info for ticket/service
 3. take customers order/make service ticket
-4 confirm ticket/order
+4. confirm ticket/order
+5. display invoice
+6. archive invoice
+7. end program
 
 New customer info:
 Enter customer name: Jasmine
@@ -92,5 +95,5 @@ Total price:  $113.95
 
 System history
 
-Computer readable:
-Jasmine, 201 W Benton st, 2021, kia, rio, S90CK, full-syn oil change, wiper blades, 113.95
+Computer readable dictionary:
+{Jasmine, 201 W Benton st, (phone number), 2021, kia, rio, S90CK, full-syn oil change, wiper blades, 113.95}
