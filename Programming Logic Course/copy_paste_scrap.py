@@ -64,3 +64,29 @@ while True:
         print(f"{e}")
         continue
 # --------------------------------------------------------------
+
+
+# sample:
+def validate_age(age):
+    # Example function that checks if the input meets specific criteria
+    if age < 0 or age > 120:
+        raise ValueError("Age must be between 0 and 120.")
+    return True
+
+
+# --- Looping the Input Statement ---
+while True:
+    try:
+        # 1. Get input from the user
+        user_input = int(input("Please enter your age: "))
+
+        # 2. Pass to the function / validate
+        validate_age(user_input)
+
+        # 3. If valid, break out of the loop
+        print(f"Success! Your age is {user_input}.")
+        break
+
+    except ValueError as e:
+        # Catches non-integers or custom ValueError exceptions raised by the function
+        print(f"Invalid input: {e}. Please try again.\n")
