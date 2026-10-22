@@ -12,9 +12,11 @@ SYSTEM_MENU = "1. Services\n2. Customer information\n3. Customer history\n4. Qui
 def add_customer():
     pass
 
+def calculate_price():
+    pass
 
-
-
+def display_invoice():
+    pass
 
 
 
