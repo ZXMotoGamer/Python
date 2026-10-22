@@ -8,6 +8,7 @@ SERVICES = ("Standard oil change", "Syn-blend oil change", "Full-syn oil change"
 OIL_WEIGHT = ("10w30", "5w30", "5w20")
 ADD_ONS = ("Air filter", "Cabin air filter", "Wiper blades", "Tire rotation", "Wheel alignment")
 SYSTEM_MENU = "1. Services\n2. Customer information\n3. Customer history\n4. Quit"
+customer_info = {} # customer info dictionary or txt file outside of program?? unknown how this works yet.
 
 def add_customer():
     pass
