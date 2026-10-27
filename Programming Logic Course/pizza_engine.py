@@ -13,15 +13,23 @@ ASSIGNMENT 10A: THE RESILIENT PIZZA ENGINE
 
 """
 Assignment: 10A
-Date: 10//2026
+Date: 10/26/2026
 File: pizza_engine.py
 """
 MENU = "\n1. Order pizza\n2. Quit"
 PIZZA_SIZES = (10, 14, 18, 20)
 PIZZA_DOUGHS = ("Thin", "Double", "Deep Dish")
 PIZZA_CHEESE = ("Light", "Regular", "Extra")
-MEAT_TOPPINGS = ("Peperoni", "Sausage", "Bacon", "Ground Beef", "Ham", "Italian Beef")
-VEGGIE_TOPPINGS = ("Green pepper", "Mushroom", "Onion", "Tomatoes", "Spinach")
+MEAT_TOPPINGS = (
+    "Peperoni",
+    "Sausage",
+    "Bacon",
+    "Ground beef",
+    "Ham",
+    "Italian beef",
+    "None",
+)
+VEGGIE_TOPPINGS = ("Green pepper", "Mushroom", "Onion", "Tomatoes", "Spinach", "None")
 
 
 def make_pizza(
@@ -29,9 +37,9 @@ def make_pizza(
     size="14",
     dough="Thin",
     cheese="Regular",
-    meat="None",
+    meats="None",
     veggies="None",
-    delivery=False,
+    is_delivery=False,
 ):
 
     print("\t\tCustomer Order\n")
@@ -39,12 +47,14 @@ def make_pizza(
     print(f"Size: {size}")
     print(f"Dough: {dough}")
     print(f"Cheese: {cheese}")
-    print(f"Meat: {meat}")
+    print(f"Meat: {meats}")
     print(f"Veggies: {veggies}")
-    print(f"Delivery: ")
+    if is_delivery == False:
+        print("Delivery: No")
+    else:
+        print("Delivery: Yes")
     print("\nEnjoy your pizza!")
-    print("Thank you! Come again!")
-    pass
+    print("Thank you! Come again!\n")
 
 
 def option_not_available():
@@ -76,13 +86,14 @@ def main():
                     try:
                         print(f"\n{PIZZA_SIZES}")
                         pizza_size = int(input("\nEnter a size for your pizza: "))
-                    except ValueError:
-                        print("\nInvalid entry, please enter a numerical number.")
-                        if pizza_size in PIZZA_SIZES:
-                            break
-                        else:
+                        if pizza_size not in PIZZA_SIZES:
                             option_not_available()
                             continue
+                        else:
+                            break
+                    except ValueError:
+                        print("\nInvalid entry, please enter a numerical number.")
+                        continue
                 while True:
                     print(f"\n{PIZZA_DOUGHS}")
                     pizza_dough = input("\nEnter your pizza dough: ").strip().title()
@@ -100,7 +111,9 @@ def main():
                         break
                 while True:
                     print(f"\n{MEAT_TOPPINGS}")
-                    meat_topping = input("\nEnter your meat topping: ").strip().title()
+                    meat_topping = (
+                        input("\nEnter your meat topping: ").strip().capitalize()
+                    )
                     if meat_topping not in MEAT_TOPPINGS:
                         option_not_available()
                     else:
@@ -108,7 +121,7 @@ def main():
                 while True:
                     print(f"\n{VEGGIE_TOPPINGS}")
                     veggie_topping = (
-                        input("Enter your veggie topping: ").strip().title()
+                        input("\nEnter your veggie topping: ").strip().capitalize()
                     )
                     if veggie_topping not in VEGGIE_TOPPINGS:
                         option_not_available()
@@ -116,24 +129,24 @@ def main():
                     else:
                         break
                 while True:
-                    order_type = (
-                        input("\nIs this for delivery or pickup: ").strip().lower()
-                    )
-                    if order_type == "delivery":
+                    user_order_type = input("\nIs this for delivery: ").strip().lower()
+                    if user_order_type == "yes":
                         delivery = True
-                    elif order_type == "pickup":
+                        break
+                    elif user_order_type == "no":
+                        delivery = False
                         break
                     else:
-                        print("\nSorry option not available.")
+                        print('\nSorry, please enter "Yes" or "No"')
                         continue
                 make_pizza(
-                    user_name,
-                    pizza_size,
-                    pizza_dough,
-                    pizza_cheese,
-                    meat_topping,
-                    veggie_topping,
-                    order_type,
+                    name=user_name,
+                    size=pizza_size,
+                    dough=pizza_dough,
+                    cheese=pizza_cheese,
+                    meats=meat_topping,
+                    veggies=veggie_topping,
+                    is_delivery=delivery,
                 )
                 break
             case 2:
