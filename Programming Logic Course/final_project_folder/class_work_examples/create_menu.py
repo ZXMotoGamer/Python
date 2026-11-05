@@ -1,3 +1,8 @@
+# master example 1
+# used for assignment 12A
+# I guess this is suppose to be integrated into my final project.
+
+
 def get_menu_options():
     menu = {}
     while True:
