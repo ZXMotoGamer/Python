@@ -12,13 +12,13 @@ def get_menu_options():
         ).upper()
         if category == "Q":
             break
-        items = input("Please enter items separated by commas: ")
+        items = input("Please enter items separated by commas: ").title()
         menu[category] = items
     return menu
 
 
 def save_to_file(menu):
-    with open("menu.txt", "a") as file:
+    with open("final_project_folder\\menu.txt", "a") as file:
         all_items = menu.items()
         for item in all_items:
             output = f"{item[0]} : {item[1]}"

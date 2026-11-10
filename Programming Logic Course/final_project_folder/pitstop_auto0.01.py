@@ -16,7 +16,6 @@ ADD_ONS = (
 )
 SYSTEM_MENU = "1. Services\n2. Customer information\n3. Customer history\n4. Quit"
 
-# possible dictionary for customer information
 customer_info = (
     {}
 )  # customer info dictionary or txt file outside of program?? unknown how this works yet.
