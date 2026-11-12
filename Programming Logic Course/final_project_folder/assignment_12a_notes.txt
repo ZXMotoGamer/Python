@@ -1,0 +1,6 @@
+what to turn in: read menu program (assignment_12a-2)
+move to final project folder and turn in folder for mon night
+use final project contents for read menu assignment
+for read/write code make sure to refer to all folders involved.
+example: 
+with open("Programming Logic Course\\final_project_folder\\menu.txt", "a" or "r" or "w") as file:
