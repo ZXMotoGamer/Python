@@ -22,7 +22,9 @@ import datetime
 def read_menu():
     menus = {}
     try:
-        with open("menu_config.txt", "r") as file:
+        with open(
+            "programming_logic_course\\final_project_folder\\menu_config.txt", "r"
+        ) as file:
             for line in file:
                 parts_of_line = line.strip().split(":")
                 category = parts_of_line[0].strip()
