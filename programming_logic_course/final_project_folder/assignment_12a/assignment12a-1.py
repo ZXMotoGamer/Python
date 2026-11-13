@@ -34,7 +34,8 @@ def get_menu_options():
 
 def save_to_file(menu):
     with open(
-        "programming_logic_course\\final_project_folder\\menu_config.txt", "a"
+        "programming_logic_course\\final_project_folder\\assignment_12a\\menu_config.txt",
+        "a",
     ) as file:
         all_items = menu.items()
         for item in all_items:

@@ -23,7 +23,8 @@ def read_menu():
     menus = {}
     try:
         with open(
-            "programming_logic_course\\final_project_folder\\menu_config.txt", "r"
+            "programming_logic_course\\final_project_folder\\assignment_12a\\menu_config.txt",
+            "r",
         ) as file:
             for line in file:
                 parts_of_line = line.strip().split(":")
