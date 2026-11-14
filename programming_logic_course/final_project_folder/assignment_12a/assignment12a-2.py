@@ -13,8 +13,8 @@ ASSIGNMENT 12A: THE CONFIGURABLE MENU & AUDITOR
 
 """
 Assignment: 12A-2
-Date: //2026
-File: assignment12a.py
+Date: 11/13/2026
+File: assignment12a-2.py
 """
 import datetime
 
@@ -46,11 +46,17 @@ def read_menu():
         print(e)
 
 
+# The "read_menu" function reads from a text file and uses a "for" loop to split and assign certain parts of the line to variables so that a dictionary can be made for the program to use.
+
+
 def split_into_variables(menu_items):
     services = menu_items.get("SERVICES")
     oil_weights = menu_items.get("OIL WEIGHT")
     add_ons = menu_items.get("ADDITIONAL SERVICES")
     return services, oil_weights, add_ons
+
+
+# The "split_variables" function assigns the dictionary "keys" to variables that the program will use to display the menu.
 
 
 def print_services(services):
@@ -72,6 +78,9 @@ def print_add_ons(add_ons):
     add_ons_item = add_ons.split(",")
     for item in add_ons_item:
         print(f"\t{item.strip()}")
+
+
+# The three functions above take each of the variables that were assigned keys from the dictionary and displays the value of the keys as menus for the user.
 
 
 def main():

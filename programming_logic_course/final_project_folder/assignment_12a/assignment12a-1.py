@@ -13,8 +13,8 @@ ASSIGNMENT 12A: THE CONFIGURABLE MENU & AUDITOR
 
 """
 Assignment: 12A-1
-Date: //2026
-File: assignment12a.py
+Date: 11/13/2026
+File: assignment12a-1.py
 """
 
 
