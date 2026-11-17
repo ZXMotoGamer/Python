@@ -16,10 +16,11 @@ ADD_ONS = (
 )
 SYSTEM_MENU = "1. Services\n2. Customer information\n3. Customer history\n4. Quit"
 
-customer_info = (
-    {}
-)  # customer info dictionary or txt file outside of program?? unknown how this works yet.
+customer_info = {}
+# customer info dictionary or txt file outside of program?? unknown how this works yet.
 
+def menu():
+    
 
 def add_customer():
     # Todo: ask customer for all relevant info for system archives.
